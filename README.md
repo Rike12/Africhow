@@ -61,7 +61,7 @@ As part of our commitment to safety and security, we require KYC verification fo
 - Uchechukwu Nwanja (link to github repo)
 
 ## Beta team
-- Mutiat Adepoju
+- Mutiat Adepoju (https://github.com/Rike12/Africhow)
 - Taofeekat Olorunkosebi (https://github.com/Taofeeqah/africhow)
 - Maria-goretti Jiwuaku 
 
