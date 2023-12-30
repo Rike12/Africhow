@@ -1,10 +1,22 @@
 import HamBurger from '../assets/hamburger/white.svg';
 import Close from '../assets/hamburger/Close.svg';
-import HeaderTitle from '../mapping/navHeaderTitle';
-import { Link } from 'react-router-dom';
+//import {MdChevronRight} from 'react-icons/md';//
+import {useLocation} from 'react-router-dom';
+import headerList from '../lib/headerList';
+import NavHeader from '../lib/navHeaderData';
+import {Link} from 'react-router-dom';
+import NavList from '../lib/navLists';
+import {UserAuth} from '../components/auth/AuthContext';
+import {signOut} from 'firebase/auth';
+import {auth} from '../../firebase';
+import {toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-
-const navBar = ({ toggleMenu, menuOpen }) => {
+const NavBar = ({toggleMenu, menuOpen}) => {
+    const {user} = UserAuth() || {};
+    const menuItems = NavList(user); // Pass the user to navList
+    const location = useLocation();
+    const isHomePage = location.pathname === '/';
 
     const closeMenu = () => {
         if (menuOpen) {

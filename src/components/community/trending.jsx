@@ -1,3 +1,17 @@
+import Search from '../../assets/images/search.png';
+import Addcircle from '../../assets/images/add_circle.png';
+import Food from '../../assets/images/food.png';
+import Foodzone from '../../assets/images/picture.png';
+import Family from '../../assets/images/family.png';
+import Favorite from '../../assets/images/favorite.png';
+import Comment from '../../assets/images/comment.png';
+import Ofada from '../../assets/images/ofada.png';
+import Forward from '../../assets/images/arrow_forward.png';
+import {Link} from 'react-router-dom';
+import {useState} from 'react';
+import {useNavigate} from 'react-router-dom';
+import Layout from '../Layout';
+
 import Search from "../../assets/images/search.png";
 import Addcircle from "../../assets/images/add_circle.png";
 import Food from "../../assets/images/food.png";
@@ -6,7 +20,6 @@ import Family from "../../assets/images/family.png";
 import Favorite from "../../assets/images/favorite.png";
 import Comment from "../../assets/images/comment.png";
 import Ofada from "../../assets/images/ofada.png";
-import navList from '../lib/NewNavList';
 import Forward from "../../assets/images/arrow_forward.png";
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
